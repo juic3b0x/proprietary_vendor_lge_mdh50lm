@@ -1,0 +1,13 @@
+on post-fs-data
+    mkdir /data/vendor/vpnclientd 0770 system system
+    insmod /vendor/lib/modules/vpnclient.ko
+
+service vendor.vpnclientd /vendor/bin/vpnclientd
+    user system
+    group system inet
+    capabilities NET_RAW NET_ADMIN
+    disabled
+    oneshot
+
+on property:init.svc.vendor.vpnclientd-hal-1-0=running
+    start vendor.vpnclientd

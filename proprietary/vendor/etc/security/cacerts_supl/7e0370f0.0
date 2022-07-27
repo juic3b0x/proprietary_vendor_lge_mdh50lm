@@ -1,0 +1,113 @@
+-----BEGIN CERTIFICATE-----
+MIIF7DCCBNSgAwIBAgIQbsx6pacDIAm4zrz06VLUkTANBgkqhkiG9w0BAQUFADCB
+yjELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQL
+ExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwNiBWZXJp
+U2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxW
+ZXJpU2lnbiBDbGFzcyAzIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0
+aG9yaXR5IC0gRzUwHhcNMTAwMjA4MDAwMDAwWhcNMjAwMjA3MjM1OTU5WjCBtTEL
+MAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZW
+ZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTswOQYDVQQLEzJUZXJtcyBvZiB1c2UgYXQg
+aHR0cHM6Ly93d3cudmVyaXNpZ24uY29tL3JwYSAoYykxMDEvMC0GA1UEAxMmVmVy
+aVNpZ24gQ2xhc3MgMyBTZWN1cmUgU2VydmVyIENBIC0gRzMwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCxh4QfwgxF9byrJZenraI+nLr2wTm4i8rCrFbG
+5btljkRPTc5v7QlK1K9OEJxoiy6Ve4mbE8riNDTB81vzSXtig0iBdNGIeGwCU/m8
+f0MmV1gzgzszChew0E6RJK2GfWQS3HRKNKEdCuqWHQsV/KNLO85jiND4LQyUhhDK
+tpo9yus3nABINYYpUHjoRWPNGUFP9ZXse5jUxHGzUL4os4+guVOc9cosI6n9FAbo
+GLSa6Dxugf3kzTU2s1HTaewSulZub5tXxYsU5w7HnO1KVGrJTcW/EbGuHGeBy0RV
+M5l/JJs/U0V/hhrzPPptf4H1uErT9YU3HLWm0AnkGHs4TvoPAgMBAAGjggHfMIIB
+2zA0BggrBgEFBQcBAQQoMCYwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLnZlcmlz
+aWduLmNvbTASBgNVHRMBAf8ECDAGAQH/AgEAMHAGA1UdIARpMGcwZQYLYIZIAYb4
+RQEHFwMwVjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cudmVyaXNpZ24uY29tL2Nw
+czAqBggrBgEFBQcCAjAeGhxodHRwczovL3d3dy52ZXJpc2lnbi5jb20vcnBhMDQG
+A1UdHwQtMCswKaAnoCWGI2h0dHA6Ly9jcmwudmVyaXNpZ24uY29tL3BjYTMtZzUu
+Y3JsMA4GA1UdDwEB/wQEAwIBBjBtBggrBgEFBQcBDARhMF+hXaBbMFkwVzBVFglp
+bWFnZS9naWYwITAfMAcGBSsOAwIaBBSP5dMahqyNjmvDz4Bq1EgYLHsZLjAlFiNo
+dHRwOi8vbG9nby52ZXJpc2lnbi5jb20vdnNsb2dvLmdpZjAoBgNVHREEITAfpB0w
+GzEZMBcGA1UEAxMQVmVyaVNpZ25NUEtJLTItNjAdBgNVHQ4EFgQUDURcFlNEwYJ+
+HSCrJfQBY9i+eaUwHwYDVR0jBBgwFoAUf9Nlp8Ld7LvwMAnzQzn6Aq8zMTMwDQYJ
+KoZIhvcNAQEFBQADggEBAAyDJO/dwwzZWJz+NrbrioBL0aP3nfPMU++CnqOh5pfB
+WJ11bOAdG0z60cEtBcDqbrIicFXZIDNAMwfCZYP6j0M3m+oOmmxw7vacgDvZN/R6
+bezQGH1JSsqZxxkoor7YdyT3hSaGbYcFQEFn0Sc67dxIHSLNCwuLvPSxe/20majp
+dirhGi2HbnTTiN0eIsbfFrYrghQKlFzyUOyvzv9iNw2tZdMGQVPtAhTItVgooazg
+W+yzf5VK+wPIrSbb5mZ4EkrZn0L74ZjmQoObj49nJOhhGbXdzbULJgWOw27EyHW4
+Rs/iGAZeqa6ogZpHFt4MKGwlJ7net4RYxh84HqTEy2Y=
+-----END CERTIFICATE-----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            6e:cc:7a:a5:a7:03:20:09:b8:ce:bc:f4:e9:52:d4:91
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, O=VeriSign, Inc., OU=VeriSign Trust Network, OU=(c) 2006 VeriSign, Inc. - For authorized use only, CN=VeriSign Class 3 Public Primary Certification Authority - G5
+        Validity
+            Not Before: Feb  8 00:00:00 2010 GMT
+            Not After : Feb  7 23:59:59 2020 GMT
+        Subject: C=US, O=VeriSign, Inc., OU=VeriSign Trust Network, OU=Terms of use at https://www.verisign.com/rpa (c)10, CN=VeriSign Class 3 Secure Server CA - G3
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:b1:87:84:1f:c2:0c:45:f5:bc:ab:25:97:a7:ad:
+                    a2:3e:9c:ba:f6:c1:39:b8:8b:ca:c2:ac:56:c6:e5:
+                    bb:65:8e:44:4f:4d:ce:6f:ed:09:4a:d4:af:4e:10:
+                    9c:68:8b:2e:95:7b:89:9b:13:ca:e2:34:34:c1:f3:
+                    5b:f3:49:7b:62:83:48:81:74:d1:88:78:6c:02:53:
+                    f9:bc:7f:43:26:57:58:33:83:3b:33:0a:17:b0:d0:
+                    4e:91:24:ad:86:7d:64:12:dc:74:4a:34:a1:1d:0a:
+                    ea:96:1d:0b:15:fc:a3:4b:3b:ce:63:88:d0:f8:2d:
+                    0c:94:86:10:ca:b6:9a:3d:ca:eb:37:9c:00:48:35:
+                    86:29:50:78:e8:45:63:cd:19:41:4f:f5:95:ec:7b:
+                    98:d4:c4:71:b3:50:be:28:b3:8f:a0:b9:53:9c:f5:
+                    ca:2c:23:a9:fd:14:06:e8:18:b4:9a:e8:3c:6e:81:
+                    fd:e4:cd:35:36:b3:51:d3:69:ec:12:ba:56:6e:6f:
+                    9b:57:c5:8b:14:e7:0e:c7:9c:ed:4a:54:6a:c9:4d:
+                    c5:bf:11:b1:ae:1c:67:81:cb:44:55:33:99:7f:24:
+                    9b:3f:53:45:7f:86:1a:f3:3c:fa:6d:7f:81:f5:b8:
+                    4a:d3:f5:85:37:1c:b5:a6:d0:09:e4:18:7b:38:4e:
+                    fa:0f
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.verisign.com
+
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Certificate Policies: 
+                Policy: 2.16.840.1.113733.1.7.23.3
+                  CPS: https://www.verisign.com/cps
+                  User Notice:
+                    Explicit Text: https://www.verisign.com/rpa
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.verisign.com/pca3-g5.crl
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            1.3.6.1.5.5.7.1.12: 
+                0_.].[0Y0W0U..image/gif0!0.0...+..............k...j.H.,{..0%.#http://logo.verisign.com/vslogo.gif
+            X509v3 Subject Alternative Name: 
+                DirName:/CN=VeriSignMPKI-2-6
+            X509v3 Subject Key Identifier: 
+                0D:44:5C:16:53:44:C1:82:7E:1D:20:AB:25:F4:01:63:D8:BE:79:A5
+            X509v3 Authority Key Identifier: 
+                keyid:7F:D3:65:A7:C2:DD:EC:BB:F0:30:09:F3:43:39:FA:02:AF:33:31:33
+
+    Signature Algorithm: sha1WithRSAEncryption
+         0c:83:24:ef:dd:c3:0c:d9:58:9c:fe:36:b6:eb:8a:80:4b:d1:
+         a3:f7:9d:f3:cc:53:ef:82:9e:a3:a1:e6:97:c1:58:9d:75:6c:
+         e0:1d:1b:4c:fa:d1:c1:2d:05:c0:ea:6e:b2:22:70:55:d9:20:
+         33:40:33:07:c2:65:83:fa:8f:43:37:9b:ea:0e:9a:6c:70:ee:
+         f6:9c:80:3b:d9:37:f4:7a:6d:ec:d0:18:7d:49:4a:ca:99:c7:
+         19:28:a2:be:d8:77:24:f7:85:26:86:6d:87:05:40:41:67:d1:
+         27:3a:ed:dc:48:1d:22:cd:0b:0b:8b:bc:f4:b1:7b:fd:b4:99:
+         a8:e9:76:2a:e1:1a:2d:87:6e:74:d3:88:dd:1e:22:c6:df:16:
+         b6:2b:82:14:0a:94:5c:f2:50:ec:af:ce:ff:62:37:0d:ad:65:
+         d3:06:41:53:ed:02:14:c8:b5:58:28:a1:ac:e0:5b:ec:b3:7f:
+         95:4a:fb:03:c8:ad:26:db:e6:66:78:12:4a:d9:9f:42:fb:e1:
+         98:e6:42:83:9b:8f:8f:67:24:e8:61:19:b5:dd:cd:b5:0b:26:
+         05:8e:c3:6e:c4:c8:75:b8:46:cf:e2:18:06:5e:a9:ae:a8:81:
+         9a:47:16:de:0c:28:6c:25:27:b9:de:b7:84:58:c6:1f:38:1e:
+         a4:c4:cb:66
+SHA1 Fingerprint=5D:EB:8F:33:9E:26:4C:19:F6:68:6F:5F:8F:32:B5:4A:4C:46:B4:76

@@ -1,0 +1,10 @@
+# ccd service
+service vendor.ccd /vendor/bin/ccd
+	class main
+	user system
+	group system
+	capabilities WAKE_ALARM
+	file /dev/kmsg w
+
+on charger
+	start vendor.ccd

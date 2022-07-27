@@ -1,0 +1,39 @@
+# [start] MTK should run wififtmd to copy nv cal for HiddenMenu
+service vendor.wififtmd /vendor/bin/wififtmd
+    user wifi
+    group system wifi radio
+    disabled
+    oneshot
+
+on property:vendor.lge.wifi_ftm.wififtmd_start=1
+    start vendor.wififtmd
+
+on property:vendor.lge.wifi_ftm.wififtmd_start=0
+    stop vendor.wififtmd
+# [end] MTK should run wififtmd to copy nv cal for HiddenMenu
+
+# LGE Wi-Fi wlan_ril daemon
+service vendor.wlan_rild /vendor/bin/hw/wlan_ril
+    class main
+    user wifi
+    group wifi radio system net_raw net_admin
+    disabled
+    oneshot
+
+on property:vendor.lge.wlan_ril_start=enable
+    start vendor.wlan_rild
+
+on property:vendor.lge.wlan_ril_start=disable
+    stop vendor.wlan_rild
+
+on boot
+    mkdir /dev/socket/wlan_ril 0770 wifi wifi
+    chmod 2770 /dev/socket/wlan_ril
+
+# MTK FW Logging Service
+service vendor.wlan_logger /system/vendor/bin/connsysloggerVendor -n 5 -b 20
+    user system
+    class main
+    group log system shell radio sdcard_rw inet sdcard_r media_rw bluetooth gps wifi
+    disabled
+    oneshot

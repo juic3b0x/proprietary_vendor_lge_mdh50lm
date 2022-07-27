@@ -1,0 +1,24 @@
+# MTK connectivitylogDVendor rc
+
+on post-fs-data
+    mkdir /data/vendor/wlan_logs 0775 system system
+    restorecon /data/vendor/wlan_logs
+    mkdir /data/vendor/connsyslog 0775 system system
+    restorecon /data/vendor/connsyslog
+
+service vendor.wlan_logger /vendor/bin/connsysloggerVendor -n 5 -b 20 -f /data/vendor/wlan_logs
+    class main
+    user system
+    group log system shell radio sdcard_rw inet media_rw bluetooth gps wifi
+    disabled
+
+on property:persist.vendor.lge.wlan.kpi_start=1
+    # set log level to more
+    write /proc/net/wlan/dbgLevel "0xff:0x3f"
+    start vendor.wlan_logger
+
+on property:persist.vendor.lge.wlan.kpi_start=0
+    # set log level to default
+    write /proc/net/wlan/dbgLevel "0xff:0x2f"
+    stop vendor.wlan_logger
+

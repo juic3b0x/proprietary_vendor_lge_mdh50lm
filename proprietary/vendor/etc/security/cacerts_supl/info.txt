@@ -1,0 +1,33 @@
+[AT&T SUPL Certifications]
+1e8e7201 - GlobalSign Root CA - R3
+399e7759 - DigiCert Global Root CA
+c90bc37d - DigiCert Global Root G2
+ed39abd0 - DigiCert Global Root G3
+facacbc6 - VeriSign Class 3 Public Primary Certification Authority - G5
+
+[SoftBank SUPL Certification]
+3ad48a91 - BaltimoreCyberTrustRoot
+c90bc37d - DigiCert Global Root G2
+
+[TMUS SUPL Certification]
+1a700a7f.0 - T-Mobile USA Root CA
+455f1b52.0 - Entrust Root Certification Authority - G2
+
+[VZW SUPL Certification]
+7651b327.0 - Class 3 Public Primary Certification Authority
+facacbc6.0 - VeriSign Class 3 Public Primary Certification Authority - G5
+
+[IUSACEL SUPL Certification]
+7651b327.0 - Class 3 Public Primary Certification Authority
+facacbc6.0 - VeriSign Class 3 Public Primary Certification Authority - G5
+
+[UNF SUPL Certification]
+4bcd7fc4.0 - DigiCert Global Root CA
+399e7759.0 - DigiCert Global Root CA
+876bdba8.0 - VeriSign Class 3 Public Primary Certification Authority - G5
+
+[USC SUPL Certification]
+7e0370f0.0 - VeriSign Class 3 Public Primary Certification Authority - G5
+
+[VDF SUPL Certification]
+ddc328ff.0 - server-certs@thawte.com

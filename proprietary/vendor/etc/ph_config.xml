@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<res-config sw="1" version="20171214" model="mmh4">
+    <hint name="applaunch.home.dph"
+		  id="1">
+        <perfservice duration="50">
+            <!-- l_core_min, l_core_max, l_freq_min, l_freq_max, b_core_min, b_core_max, b_freq_min, b_freq_max -->
+            <!-- little core 3, big core 4, max freq -->
+            3, -1, 2301000, -1, 4, -1, 1800000, -1,
+        </perfservice>
+    </hint>
+    <hint name="rotation.sys.ev"
+          id="2">
+		<perfservice duration="1000">
+            <!-- little core 4, big core 4, max freq -->
+            4, -1, 2301000, -1, 4, -1, 1800000, -1,
+        </perfservice>
+	</hint>
+    <hint name="softkey.sui.ev"
+          id="15">
+		<perfservice duration="300">
+            <!-- little core dont care, big core 4, max freq -->
+            4, -1, 2301000, -1, -1, -1, -1, -1,
+        </perfservice>
+    </hint>
+    <hint name="boost.mms.dph"
+          id="20">
+		<perfservice duration="2000">
+            <!-- little core 4, big core 4, max freq -->
+            4, -1, 2301000, -1, 4, -1, 1800000, -1,
+        </perfservice>
+    </hint>
+    <hint name="display-state.sys.ev"
+          id="21">
+		<perfservice duration="500">
+            <!-- little core dont care, big core 4, max freq -->
+            -1, -1, -1, -1, 4, -1, 1800000, -1,
+        </perfservice>
+    </hint>
+    <hint name="procprelaunch.sys.ev"
+          id="99">
+		<perfservice duration="100">
+            <!-- little core dont care, big core 4, max freq -->
+                3, -1, 2301000, -1, 4, -1, 1800000, -1,
+        </perfservice>
+    </hint>
+    <hint name="app-trans.int.ev"
+          id="100">
+		<set type="transition">
+            <perfservice duration="2500">
+                <!-- little core 3, big core 4, max freq -->
+                3, -1, 2301000, -1, 4, -1, 1800000, -1,
+            </perfservice>
+        </set>
+        <set type="launch">
+            <perfservice duration="3500">
+                <!-- little core 3, big core 4, max freq -->
+                3, -1, 2301000, -1, 4, -1, 1800000, -1,
+            </perfservice>
+        </set>
+        <set type="heavy">
+            <perfservice duration="4000">
+                <!-- little core 4, big core 4, max freq -->
+                4, -1, 2301000, -1, 4, -1, 1800000, -1,
+            </perfservice>
+        </set>
+        <set type="game">
+            <perfservice duration="10000">
+                <!-- little core 3, big core 4, max freq -->
+                3, -1, 2301000, -1, 4, -1, 1800000, -1,
+            </perfservice>
+        </set>
+    </hint>
+    <hint name="flick.sys.ev"
+          id="101">
+		<set type="normal">
+            <perfservice duration="3000">
+                <!-- little core 0, big core 4, max freq -->
+                4, -1, 2301000, -1, -1, -1, -1, -1,
+            </perfservice>
+        </set>
+        <set type="heavy">
+            <perfservice duration="3000">
+                <!-- little core 0, big core 4, max freq -->
+                4, -1, 2301000, -1, -1, -1, -1, -1,
+            </perfservice>
+        </set>
+    </hint>
+</res-config>
+

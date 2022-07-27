@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<app-list version="16100701">
+    <app-array sw="1">
+        <item heavy="true">com.twitter.android</item>
+        <item heavy="true">com.facebook.katana</item>
+        <item heavy="true">com.google.android.apps.maps</item>
+        <item heavy="true">com.google.android.youtube</item>
+        <item heavy="true">com.android.chrome</item>
+        <item heavy="true">com.adobe.photoshopmix</item>
+        <item heavy="true">net.daum.android.daum</item>
+        <item flick="2">com.twitter.android</item>
+        <item flick="2">com.android.vending</item>
+        <item flick="2">com.google.android.gm</item>
+        <item flick="2">com.android.mms</item>
+    </app-array>
+</app-list>

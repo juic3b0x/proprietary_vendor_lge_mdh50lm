@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Configure>
+    <Config operator="" country="" device="">
+        <SecureElementType> INITVALUE </SecureElementType>
+        <SupportSEList> INITVALUE </SupportSEList>
+        <AccessControlEnable> false </AccessControlEnable>
+        <HostCardEmulationScenario> host, host, na, na, na </HostCardEmulationScenario>
+        <AutomaticSwitchingSupport> false </AutomaticSwitchingSupport>
+        <SIMSwapEnable> false </SIMSwapEnable>
+        <SwpRetryInit> false </SwpRetryInit>
+        <BlockRoute> false </BlockRoute>
+        <DefaultOnOffType> oncardrwp2p </DefaultOnOffType>
+    </Config>
+</Configure>

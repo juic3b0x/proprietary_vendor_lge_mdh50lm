@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Configure>
+    <!--
+    SKT_KR (SKT / Korea)
+    KT_KR (KT / Korea)
+    LGU_KR (LG Uplus / Korea)
+    -->
+    <Config operator="" country="KR" device="">
+        <IndicatorType> three_toggleV1N </IndicatorType>
+        <PopupDialogType> INITVALUE </PopupDialogType>
+        <SwpWindowSize> 2 </SwpWindowSize>
+        <EmptyPopupSupport> false </EmptyPopupSupport>
+        <NFCCEventConfig> INITVALUE </NFCCEventConfig>
+        <NFCCEventConfig targetdevice="judyln|judyp"> rffield_EEevent_off </NFCCEventConfig>
+        <HostCardEmulationScenario> config, config, uicc, uicc, uicc </HostCardEmulationScenario>
+        <ReaderModeApiSupport> true </ReaderModeApiSupport>
+        <DefaultOnOffType> oncard </DefaultOnOffType>
+        <BlockRoute> false </BlockRoute>
+        <FirmwareFileName targetmodel="LM-G710N|LM-V350N|LM-V500[A-Z]*"> libpn553_fw_1D </FirmwareFileName>
+    </Config>
+</Configure>

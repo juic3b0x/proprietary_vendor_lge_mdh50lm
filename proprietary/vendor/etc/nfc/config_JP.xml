@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Configure>
+    <Config operator="" country="JP" device="">
+        <DefaultOnOffType> oncardrwp2p </DefaultOnOffType>
+        <IndicatorType targetdevice="DM-01G"> two_toggleD </IndicatorType>
+        <PopupDialogType> INITVALUE </PopupDialogType>
+        <EmptyPopupSupport> false </EmptyPopupSupport>
+        <AutomaticSwitchingSupport> false </AutomaticSwitchingSupport>
+        <SIMSwapEnable> false </SIMSwapEnable>
+        <SwpRetryInit> false </SwpRetryInit>
+        <NfcAntennaPopup> none </NfcAntennaPopup>
+    </Config>
+    <!-- For not supported FeliCa (OA1930, mmh4p-pr) -->
+    <Config operator="" country="JP" device="OA1930|mmh4p-pr">
+        <SecureElementType> INITVALUE </SecureElementType>
+        <SupportSEList> INITVALUE </SupportSEList>
+        <AccessControlEnable> false </AccessControlEnable>
+        <HostCardEmulationScenario> host, host, na, na, na </HostCardEmulationScenario>
+        <AutomaticSwitchingSupport> false </AutomaticSwitchingSupport>
+        <SIMSwapEnable> false </SIMSwapEnable>
+        <SwpRetryInit> false </SwpRetryInit>
+        <BlockRoute> false </BlockRoute>
+        <NfcAntennaPopup> none </NfcAntennaPopup>
+    </Config>
+</Configure>

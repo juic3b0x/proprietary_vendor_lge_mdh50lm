@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ccd platform="mt6765">
+    <!-- voter list -->
+    <voter name="icl" path="/sys/module/charger_controller/parameters/ccd_icl"></voter>
+    <voter name="fcc" path="/sys/module/charger_controller/parameters/ccd_fcc"></voter>
+    <voter name="vfloat" path="/sys/module/charger_controller/parameters/ccd_vfloat"></voter>
+    <voter name="wakealarm"></voter>
+
+    <!-- module list -->
+    <module name="monitor">
+        <info name="status">/proc/lge_power/battery/status</info>
+        <info name="health">/proc/lge_power/battery/health</info>
+        <info name="present">/proc/lge_power/battery/present</info>
+        <info name="level">/proc/lge_power/battery/capacity</info>
+        <info name="voltage">/proc/lge_power/battery/voltage_now</info>
+        <info name="temperature">/proc/lge_power/adc/batt_therm</info>
+        <info name="current_now">/proc/lge_power/charger/ibat_current</info>
+        <info name="current_max">/proc/lge_power/charger/ichg_current</info>
+        <info name="fastchg">/proc/lge_power/charger/fastchg</info>
+        <info name="batt_id">/proc/lge_power/battery/battery_type</info>
+        <info name="cycle_count">/proc/lge_power/battery/cycle</info>
+        <info name="learned_capacity">/proc/lge_power/battery/charge_full</info>
+        <info name="design_capacity">/proc/lge_power/battery/charge_full_design</info>
+    </module>
+    <module name="llk">
+        <info name="store_demo_enabled">/proc/lge_power/charger/store_demo_enabled</info>
+        <min>45</min>
+        <max>50</max>
+    </module>
+</ccd>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Configure>
+    <!-- AT&T, USC, ACG, NAO, MPCS, TMO, OPEN, SPR / United States -->
+    <Config operator="" country="US" device="">
+        <PrimaryRoute> host </PrimaryRoute>
+        <SwpRetryInit> false </SwpRetryInit>
+    </Config>
+    <!-- Verizon / United States -->
+    <Config operator="VZW" country="US" device="">
+        <WCScenarioEnable> update </WCScenarioEnable>
+        <DefaultOnOffType> offp2p </DefaultOnOffType>
+        <PopupDialogType> vzw </PopupDialogType>
+        <EmptyPopupSupport> false </EmptyPopupSupport>
+        <TransactionEventScenario> multicast </TransactionEventScenario>
+        <PrimaryRoute> host </PrimaryRoute>
+        <NfcAntennaPopup> none </NfcAntennaPopup>
+        <UseGpacResultValidTime> true </UseGpacResultValidTime>
+        <SwpRetryInit> false </SwpRetryInit>
+        <FirmwareFileName targetdevice="judyln"> libpn553_fw </FirmwareFileName>
+    </Config>
+</Configure>

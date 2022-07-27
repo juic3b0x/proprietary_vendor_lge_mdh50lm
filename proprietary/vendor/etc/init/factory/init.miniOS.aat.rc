@@ -1,0 +1,681 @@
+#################################################################
+# AAT executable process
+service aat_nfc_sub /sbin/python /data/msp/minios/run.py apps.aat.nfc_sub.aat_nfc_sub
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_camera_macro /sbin/python /data/msp/minios/run.py apps.aat.cameraMacro.aat_camera_macro
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_camera_aux /sbin/python /data/msp/minios/run.py apps.aat.cameraAux.aat_camera_aux
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_keypress /sbin/python /data/msp/minios/run.py apps.aat.keypress.aat_keypress
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_vib_cap_auto /sbin/python /data/msp/minios/run.py apps.aat.vib_cap_auto.aat_vib_cap_auto
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_autokeypress /sbin/python /data/msp/minios/run.py apps.aat.keypress_new.aat_autokeypress
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_mainlist /sbin/python /data/msp/minios/run.py apps.aat.mainlist.aat_mainlist
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_nfc /sbin/python /data/msp/minios/run.py apps.aat.nfc.aat_nfc
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_vibrator /sbin/python /data/msp/minios/run.py apps.aat.vibrator.aat_vibrator
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_irdairrc /sbin/python /data/msp/minios/run.py apps.aat.irdairrc.aat_irdairrc
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_touch_draw /sbin/python /data/msp/minios/run.py apps.aat.touch_draw.aat_touch_draw
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_touch_auto /sbin/python /data/msp/minios/run.py apps.aat.touch_auto.aat_touch_auto
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_auto_detect /sbin/python /data/msp/minios/run.py apps.aat.auto_detect.aat_auto_detect
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_cameraMain /sbin/python /data/msp/minios/run.py apps.aat.cameraMain.aat_cameraMain
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_camcorder /sbin/python /data/msp/minios/run.py apps.aat.camcorder.aat_camcorder
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_cameraVT /sbin/python /data/msp/minios/run.py apps.aat.cameraVT.aat_cameraVT
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_led_display /sbin/python /data/msp/minios/run.py apps.aat.led_display.aat_led_display
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_audio /sbin/python /data/msp/minios/run.py apps.aat.audio.aat_audio
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_pen /sbin/python /data/msp/minios/run.py apps.aat.pen.aat_pen
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_waterproof /sbin/python /data/msp/minios/run.py apps.aat.waterproof.aat_waterproof
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_m_sensor3 /sbin/python /data/msp/minios/run.py apps.aat.m_sensor3.aat_m_sensor3
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_gps_bt_wifi /sbin/python /data/msp/minios/run.py apps.aat.gps_bt_wifi.aat_gps_bt_wifi
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_dmb_hdmi /sbin/python /data/msp/minios/run.py apps.aat.dmb_hdmi.aat_dmb_hdmi
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_slide /sbin/python /data/msp/minios/run.py apps.aat.slide.aat_slide
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_fm_radio /sbin/python /data/msp/minios/run.py apps.aat.fm_radio.aat_fm_radio
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_mic /sbin/python /data/msp/minios/run.py apps.aat.mic.aat_mic
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_loopback /sbin/python /data/msp/minios/run.py apps.aat.loopback.aat_loopback
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_sensor_auto /sbin/python /data/msp/minios/run.py apps.aat.sensor_auto.aat_sensor_auto
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_cameraOIS /sbin/python /data/msp/minios/run.py apps.aat.cameraOIS.aat_cameraOIS
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_mp3 /sbin/python /data/msp/minios/run.py apps.aat.mp3.aat_mp3
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_ppg /sbin/python /data/msp/minios/run.py apps.aat.ppg.aat_ppg
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_otg /sbin/python /data/msp/minios/run.py apps.aat.otg.aat_otg
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_hvdcp /sbin/python /data/msp/minios/run.py apps.aat.hvdcp.aat_hvdcp
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_optical_fp /sbin/python /data/msp/minios/run.py apps.aat.fingerprint_optical.aat_optical_fp
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_fingerprint /sbin/python /data/msp/minios/run.py apps.aat.fingerprint.aat_fingerprint
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_result /sbin/python /data/msp/minios/run.py apps.aat.result.aat_result
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_lcd_auto /sbin/python /data/msp/minios/run.py apps.aat.vision.lcd_auto.aat_lcd_auto
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_tumble /sbin/python /data/msp/minios/run.py apps.aat.tumble.aat_tumble
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_buildfeature /sbin/python /data/msp/minios/run.py apps.aat.buildfeature.aat_buildfeature
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_showdata /sbin/python /data/msp/minios/run.py apps.aat.showdata.aat_showdata
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_qrdisplay /sbin/python /data/msp/minios/run.py apps.aat.qrdisplay.aat_qrdisplay
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_kona_dl /sbin/python /data/msp/minios/run.py apps.aat.kona_dl.aat_kona_dl
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_wireless_log /sbin/python /data/msp/minios/run.py apps.aat.wireless_log.aat_wireless_log
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service pre_gps_test /sbin/python /data/msp/minios/run.py apps.aat.pre_gps.pre_gps
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_laus /sbin/python /data/msp/minios/run.py apps.aat.laus.aat_laus
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_barometer /sbin/python /data/msp/minios/run.py apps.aat.barometer.aat_barometer
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_video /sbin/python /data/msp/minios/run.py apps.aat.video.aat_video
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_video_short /sbin/python /data/msp/minios/run.py apps.aat.video_short.aat_video_short
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_video_long /sbin/python /data/msp/minios/run.py apps.aat.video_long.aat_video_long
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_imei_pid /sbin/python /data/msp/minios/run.py apps.aat.imei_pid.aat_imei_pid
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_selfrun /sbin/python /data/msp/minios/run.py apps.aat.selfrun.aat_selfrun
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_spts /sbin/python /data/msp/minios/run.py apps.aat.spts.aat_spts
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_pureautotune /sbin/python /data/msp/minios/run.py apps.aat.pure_auto_tune.aat_pureautotune
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_sim_sd_swp /sbin/python /data/msp/minios/run.py apps.aat.sim_sd_swp.aat_sim_sd_swp
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_wifi_fw_log /sbin/python /data/msp/minios/run.py apps.aat.wifi_fw_logging.aat_wifi_fw_logging
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_modem_logging /sbin/python /data/msp/minios/run.py apps.aat.modem_logging.aat_modem_logging
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_wifi_ota_mode /sbin/python /data/msp/minios/run.py apps.aat.wifi_ota_mode.aat_wifi_ota_mode
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_hw_component /sbin/python /data/msp/minios/run.py apps.aat.hw_component_check.aat_hw_component_check
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_pink_noise /sbin/python /data/msp/minios/run.py apps.aat.pink_noise_audio.aat_pink_noise_audio
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_piezo /sbin/python /data/msp/minios/run.py apps.aat.piezo.aat_piezo
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_mme /sbin/python /data/msp/minios/run.py apps.aat.mme.aat_mme
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service bg_accel /sbin/python /data/msp/minios/run.py apps.aat.background.accel.bg_accel
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service bg_gyro /sbin/python /data/msp/minios/run.py apps.aat.background.gyro.bg_gyro
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service bg_cameraois /sbin/python /data/msp/minios/run.py apps.aat.background.cameraois.bg_cameraois
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service bg_dmb /sbin/python /data/msp/minios/run.py apps.aat.background.dmb.bg_dmb
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_appsport /sbin/python /data/msp/minios/run.py apps.aat.appsport.aat_appsport
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_glovetouch /sbin/python /data/msp/minios/run.py apps.aat.glovetouch.aat_glovetouch
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_display_ic /sbin/python /data/msp/minios/run.py apps.aat.display_ic.aat_display_ic
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_felica /sbin/python /data/msp/minios/run.py apps.aat.felica.aat_felica
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_outfocus /sbin/python /data/msp/minios/run.py apps.aat.outfocusing.aat_outfocusing
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_outfocus_visidon /sbin/python /data/msp/minios/run.py apps.aat.outfocusing_visidon.aat_outfocus_visidon
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service etc_color /sbin/python /data/msp/minios/run.py apps.etc.color.etc_color
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_sensor_cap /sbin/python /data/msp/minios/run.py apps.aat.sensor.aat_sensor_cap
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service repair_device /sbin/python /data/msp/minios/run.py apps.aat.repair_device.aat_repair_device
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service repair_aging /sbin/python /data/msp/minios/run.py apps.aat.repair_aging.aat_repair_aging
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_howling /sbin/python /data/msp/minios/run.py apps.aat.howling.aat_howling
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_camera_auto /sbin/python /data/msp/minios/run.py apps.aat.camera_auto.aat_camera_auto
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_camera_tele /sbin/python /data/msp/minios/run.py apps.aat.camera.aat_camera_tele
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_cameraTOF /sbin/python /data/msp/minios/run.py apps.aat.cameraTOF.aat_cameraTOF
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_dual_display /sbin/python /data/msp/minios/run.py apps.aat.dual_display.aat_dual_display
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_ant_5g /sbin/python /data/msp/minios/run.py apps.aat.ant_5g.aat_ant_5g
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_cameraTOF_preview /sbin/python /data/msp/minios/run.py apps.aat.cameraTOF.aat_cameraTOF_preview
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service etc_heating /sbin/python /data/msp/minios/run.py apps.etc.heating.etc_heating
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_cameraTOF_verify /sbin/python /data/msp/minios/run.py apps.aat.cameraTOF.aat_cameraTOF_verify
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_edge_sensor /sbin/python /data/msp/minios/run.py apps.aat.edge_sensor.aat_edge_sensor
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0

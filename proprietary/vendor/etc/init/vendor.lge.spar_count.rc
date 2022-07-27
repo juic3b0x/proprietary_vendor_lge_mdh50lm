@@ -1,0 +1,6 @@
+service vendor.spar_count /vendor/bin/spar_count
+	class main
+	user root
+	group system
+	oneshot
+	file /dev/kmsg w

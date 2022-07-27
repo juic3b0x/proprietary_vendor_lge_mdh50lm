@@ -1,0 +1,54 @@
+
+; TAS2563-B Factory Test and Calibration Configuration File
+; -----------------------------------------------------------------------------
+; PPC3 File: SPK Phone digital gain+14dB_11_DH50 - TAS2563  Tuning_1227_HWTeam_01132020.PPC3
+; TAS2563LG_Dual_Mono version: 3.0.0-alpha.5
+; DDC Name: tas2563_uCDSP
+; Comments: [Write Comments Here]
+
+; FTC Settings
+FTC_BYPASS                = 0                     ; Refer to documentation
+TEST_DELTA_T              = 70                    ; Delta Temperature Limit during verification phase
+CALIBRATION_TIME          = 800                   ; Duration (in ms) of calibration phase
+VERIFICATION_TIME         = 4000                  ; Duration (in ms) of the verification phase
+CONFIGURATION             = 0                     ; Refer to documentation
+CONFIGURATION_CALIBRATION = 1                     ; Refer to documentation
+DEV_ADDR                  = 9a                    ; I2C slave write addr (in hex) for device B
+
+; Pass/Fail Limits
+RE_HI                     = 7.04
+RE_LO                     = 5.0
+F0_HI                     = 924
+F0_LO                     = 616
+Q_HI                      = 1.704
+Q_LO                      = 1.136
+T_HI                      = 40
+T_LO                      = 0
+
+; Obtained from Speaker Manufacturer
+SPK_T_MAX                 = 90                    ; Speaker Maximum Temperature (C)
+SPK_RE_TOL_PER            = 10                    ; Re +/- tolerance (%)
+
+; Obtained from PurePath Console 3 (PPC3)
+PPC3_RE0                  = 6.4                   ; Re0 (ohm)
+PPC3_FWARP                = 571                   ; CMWF (Hz)
+PPC3_BL                   = 0.542                 ; Bl (Tm)
+PPC3_MMS                  = 0.0856                ; Mms (g)
+PPC3_RTV                  = 59.2                  ; Rtv (K/W)
+PPC3_RTM                  = 41.6                  ; Rtm  (K/W)
+PPC3_RTVA                 = 2490                  ; Rtva  (K/W)
+PPC3_SYSGAIN              = 8.92                  ; System Gain (V/FS)
+PPC3_DEV_NONLIN_PER       = 0                     ; Device Non-linearity (%)
+PPC3_DELTA_T_LIMIT        = 70                    ; Delta Thermal Limit (C)
+PPC3_PIG                  = 2                     ; Refer to documentation
+PPC3_RE_ALPHA             = 0.00393               ; Temperature coefficient alpha (1/K)
+FS_RATE                   = 48000                 ; TAS2563-B Sample Rate
+
+; Calibration parameters locations (Book,Page,Offset,CoeffLength)
+umg_SsmKEGCye             =  0x00,0x0d,0x3c,0x01
+iks_E0                    =  0x00,0x0f,0x34,0x01
+yep_LsqM0                 =  0x00,0x0f,0x40,0x01
+mcb_ZwiNgmaj              =  0x00,0x0f,0x44,0x01
+oyz_U0_ujx                =  0x00,0x0f,0x48,0x01
+kgd_OEldlc                =  0x00,0x10,0x14,0x01
+

@@ -1,0 +1,5 @@
+
+service vendor.lgpserver-daemon /vendor/bin/lgpserver
+    class main
+    user system
+    group radio system

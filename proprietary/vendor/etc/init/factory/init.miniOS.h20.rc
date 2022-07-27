@@ -1,0 +1,133 @@
+#################################################################
+# H2.0 executable process
+
+service h20_mainmodule /sbin/python /data/msp/minios/run.py apps.h20.common.h20_mainmodule
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service H2_Auto_detect /sbin/python /data/msp/minios/run.py apps.h20.test.AutoDetectingItem.h20_autodetect
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service H2_Accel /sbin/python /data/msp/minios/run.py apps.h20.test.Accelerometer.h20_accel
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service H2_FingerPrint /sbin/python /data/msp/minios/run.py apps.h20.test.FingerPrint.h20_fingerprint
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service H2_Gps /sbin/python /data/msp/minios/run.py apps.h20.test.Gps.h20_gps
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service H2_Touch /sbin/python /data/msp/minios/run.py apps.h20.test.Touch.h20_touch
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service H2_Sensor /sbin/python /data/msp/minios/run.py apps.h20.test.Sensor.h20_sensor
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service H2_Nfc_felica /sbin/python /data/msp/minios/run.py apps.h20.test.Nfc.h20_nfc
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service H2_MainCamera /sbin/python /data/msp/minios/run.py apps.h20.test.MainCamera.h20_maincamera
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service H2_VTCamera /sbin/python /data/msp/minios/run.py apps.h20.test.VTCamera.h20_vtcamera
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service H2_Gyro /sbin/python /data/msp/minios/run.py apps.h20.test.Gyro.h20_gyro
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service h20_result /sbin/python /data/msp/minios/run.py apps.h20.test.Result.h20_result
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service aat_audioplus /sbin/python /data/msp/minios/run.py apps.h20.test.Audioplus.aat_audioplus
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service minios_capture /sbin/python /data/msp/minios/run.py apps.h20.test.CaptureTest.minios_capture
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service H2_LED_LCD /sbin/python /data/msp/minios/run.py apps.h20.test.led_display.h20_led_display
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+service H2_Otg /sbin/python /data/msp/minios/run.py apps.h20.test.Otg.h20_otg
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:minios_services:s0
+
+# on property:product.lge.selfd.ext2_start=1
+#    start h20_mainmodule

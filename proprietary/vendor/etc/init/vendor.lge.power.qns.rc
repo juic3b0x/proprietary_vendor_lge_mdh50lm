@@ -1,0 +1,16 @@
+service vendor.qns /vendor/bin/qns -d /mnt/vendor/power -l /data/vendor/power
+	user system
+	group system
+	disabled
+
+on boot
+	start vendor.qns
+
+on charger
+	start vendor.qns
+
+on init
+	chown system system /sys/class/qns/alarm
+	chown system system /sys/class/qns/charge_current
+	chown system system /sys/class/qns/charge_voltage
+	chown system system /sys/class/qns/options

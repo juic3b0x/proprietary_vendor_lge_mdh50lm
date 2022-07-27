@@ -1,0 +1,8 @@
+service vendor.lge-gnss-hal-1-0 /vendor/bin/hw/vendor.lge.hardware.gnss@1.0-service
+    class hal
+    user system
+    group system inet
+#
+# TODO:(b/35757613) - STOPSHIP - HAL cannot have direct inet access
+#
+    group system inet

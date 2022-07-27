@@ -1,0 +1,53 @@
+# [ DEVICE_BLOCK ]                                               [ MOUNT_POINT ]          [TYPE] [MNT_FLAGS AND OPTIONS ]                                [ FS_MGR_FLAGS ]
+# Android Native
+system                                                            /system                  ext4 ro,barrier=1,discard                                       wait,avb=vbmeta,slotselect,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+vendor                                                            /vendor                  ext4 ro,barrier=1,discard                                       wait,avb,slotselect,logical,first_stage_mount
+product                                                           /product                 ext4 ro,barrier=1,discard                                       wait,avb,slotselect,logical,first_stage_mount
+/dev/block/platform/bootdevice/by-name/md_udc                     /metadata                ext4 noatime,nosuid,nodev,discard                               wait,formattable,first_stage_mount
+#/dev/block/platform/bootdevice/by-name/userdata                   /data                   ext4 noatime,nosuid,nodev,noauto_da_alloc,errors=continue       wait,check,quota,reservedsize=128M,formattable,resize,fileencryption=aes-256-xts:aes-256-cts
+/dev/block/platform/bootdevice/by-name/userdata                    /data                   ext4 noatime,nosuid,nodev,noauto_da_alloc,errors=continue       latemount,wait,check,formattable,resize,fileencryption=aes-256-xts:aes-256-cts,checkpoint=fs
+/dev/block/platform/bootdevice/by-name/protect1                   /mnt/vendor/protect_f    ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc   wait,check,formattable
+/dev/block/platform/bootdevice/by-name/protect2                   /mnt/vendor/protect_s    ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc   wait,check,formattable
+/dev/block/platform/bootdevice/by-name/nvdata                     /mnt/vendor/nvdata       ext4 noatime,nosuid,nodev,noauto_da_alloc,discard               wait,check,formattable
+/dev/block/platform/bootdevice/by-name/nvcfg                      /mnt/vendor/nvcfg        ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc   wait,check,formattable
+/dev/block/platform/bootdevice/by-name/persist                    /mnt/vendor/persist      ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc   wait,check,formattable
+/dev/block/platform/bootdevice/by-name/frp                        /persistent              emmc defaults                                                   defaults
+
+/devices/platform/externdevice* auto auto defaults voldmanaged=sdcard1:auto,encryptable=userdata
+/devices/platform/11200000.usb0/musb-hdrc/usb* auto auto defaults voldmanaged=usbotg:auto
+
+# MTK Native
+/dev/block/platform/bootdevice/by-name/nvram                      /nvram                   emmc defaults                                                   defaults
+/dev/block/platform/bootdevice/by-name/proinfo                    /proinfo                 emmc defaults                                                   defaults
+/dev/block/platform/bootdevice/by-name/lk                         /bootloader              emmc defaults                                                   defaults,slotselect
+/dev/block/platform/bootdevice/by-name/lk2                        /bootloader2             emmc defaults                                                   defaults,slotselect
+/dev/block/platform/bootdevice/by-name/para                       /misc                    emmc defaults                                                   defaults
+/dev/block/platform/bootdevice/by-name/boot                       /boot                    emmc defaults                                                   slotselect,first_stage_mount,nofail
+/dev/block/platform/bootdevice/by-name/logo                       /logo                    emmc defaults                                                   defaults,slotselect
+/dev/block/platform/bootdevice/by-name/expdb                      /expdb                   emmc defaults                                                   defaults
+/dev/block/platform/bootdevice/by-name/seccfg                     /seccfg                  emmc defaults                                                   defaults
+/dev/block/platform/bootdevice/by-name/tee1                       /tee1                    emmc defaults                                                   defaults,slotselect
+/dev/block/platform/bootdevice/by-name/tee2                       /tee2                    emmc defaults                                                   defaults,slotselect
+/dev/block/platform/bootdevice/by-name/scp1                       /scp1                    emmc defaults                                                   defaults,slotselect
+/dev/block/platform/bootdevice/by-name/scp2                       /scp2                    emmc defaults                                                   defaults,slotselect
+/dev/block/platform/bootdevice/by-name/sspm_1                     /sspm_1                  emmc defaults                                                   defaults,slotselect
+/dev/block/platform/bootdevice/by-name/sspm_2                     /sspm_2                  emmc defaults                                                   defaults,slotselect
+/dev/block/platform/bootdevice/by-name/spmfw                      /spmfw                   emmc defaults                                                   defaults,slotselect
+/dev/block/platform/bootdevice/by-name/md1img                     /md1img                  emmc defaults                                                   defaults,slotselect
+/dev/block/platform/bootdevice/by-name/md1dsp                     /md1dsp                  emmc defaults                                                   defaults,slotselect
+/dev/block/platform/bootdevice/by-name/md1arm7                    /md1arm7                 emmc defaults                                                   defaults
+/dev/block/platform/bootdevice/by-name/md3img                     /md3img                  emmc defaults                                                   defaults
+/dev/block/platform/bootdevice/by-name/boot_para                  /boot_para               emmc defaults                                                   defaults
+#/dev/block/platform/bootdevice/by-name/dtbo                       /dtbo                    emmc defaults                                                   defaults
+
+# LGE Added
+/dev/block/platform/bootdevice/by-name/persist_lg                    /mnt/vendor/persist-lg     ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc,errors=continue  wait,check,formattable,first_stage_mount
+/dev/block/platform/bootdevice/by-name/power                         /mnt/vendor/power          ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc,errors=continue  wait,check,formattable
+/dev/block/platform/bootdevice/by-name/p_persist_lg                  /mnt/product/persist-lg    ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc,errors=continue  wait,check,formattable
+/dev/block/platform/bootdevice/by-name/mpt                           /mnt/product/mpt           ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc,errors=continue  wait,check,formattable
+/dev/block/platform/bootdevice/by-name/carrier                       /mnt/product/carrier       ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc,errors=continue  wait,check,formattable
+/dev/block/platform/bootdevice/by-name/els                           /mnt/product/els           ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc,errors=continue  wait,check,formattable
+/dev/block/platform/bootdevice/by-name/srtc                          /mnt/product/srtc          ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc,errors=continue  wait,check,formattable
+/dev/block/platform/bootdevice/by-name/eri                           /mnt/product/eri           ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc,errors=continue  wait,check,formattable
+/dev/block/platform/bootdevice/by-name/operatorlogging               /mnt/product/quality       ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc,errors=continue  wait,check,formattable
+/dev/block/platform/bootdevice/by-name/OP                            /mnt/product/OP            ext4 ro,noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc  wait,slotselect,nofail,first_stage_mount

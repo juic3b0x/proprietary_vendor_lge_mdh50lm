@@ -1,0 +1,31 @@
+#Wi-Fi Runtime
+#18.12.05. For MTK(early nvload), Change trigger point from late-fs to post-fs-data
+on post-fs-data
+    start wlan_runtime
+
+on property:ro.boot.vendor.lge.sku_carrier=*
+     exec_background u:r:wlan_runtime:s0 system system wifi -- /vendor/bin/wifi_runtime_conf.sh --sku
+     start wmt_loader
+     start wmt_launcher
+
+# WMT for MTK, 200319, Move from init_connectivity.rc to init.wifi.runtime.rc
+service wmt_loader /vendor/bin/wmt_loader
+    class early_hal
+    user system
+    group system
+    disabled
+    oneshot
+
+# WMT for MTK, Fix higher current after first sleep due to wmt on (+GPIO set to 0 in default)
+service wmt_launcher /vendor/bin/wmt_launcher -p /vendor/firmware/ -o 1
+    class early_hal
+    user system
+    group system
+    disabled
+    oneshot
+
+service wlan_runtime /vendor/bin/wifi_runtime_conf.sh --post
+     user system
+     group system wifi
+     disabled
+     oneshot

@@ -1,0 +1,4 @@
+service vendor.lge-display-brightness-hal-1-1 /vendor/bin/hw/vendor.lge.hardware.display.brightness@1.1-service
+    class hal
+    user system
+    group system

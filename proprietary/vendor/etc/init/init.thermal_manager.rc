@@ -1,0 +1,23 @@
+service thermal_manager /vendor/bin/thermal_manager
+    class main
+    user root
+    group system
+    oneshot
+
+# LGE BSP Power - Thermal Mitigation On/Off
+on property:persist.vendor.lge.sys.thermald_miti_off=* && property:dev.bootcomplete=1
+    restart thermal_manager
+
+# LGE BSP Power - Thermal Mitigation Scenario
+on property:vendor.lge.thermal.mode=*
+    wait_for_prop vendor.lge.thermal.cmd ""
+    setprop vendor.lge.thermal.cmd ${vendor.lge.thermal.mode}
+    start thermal_manager
+    wait_for_prop init.svc.thermal_manager stopped
+    setprop vendor.lge.thermal.cmd ""
+
+# LGE BSP Power - Restrict charging current in game mode
+on property:vendor.lge.thermal.mode="game on"
+    write /sys/module/charger_controller/parameters/game_mode "1"
+on property:vendor.lge.thermal.mode="game off"
+    write /sys/module/charger_controller/parameters/game_mode "0"

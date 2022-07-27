@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ParamUnitDesc version="1.0">
+	<CategoryTypeList>
+		<CategoryType name="AudioFeatureControl">
+			<Category name="GLOBAL"/>
+			<Category name="KR"/>
+			<Category name="NA"/>
+			<Category name="JP"/>
+			<Category name="SPR"/>
+		</CategoryType>
+	</CategoryTypeList>
+	<ParamUnit>
+		<Param name="lge_3pole_with_submic" type="int"/>
+		<Param name="lge_use_phone_memo" type="int"/>
+		<Param name="lge_in_call_camera_shutter_scenario" type="int" />
+		<Param name="lge_hifi_support" type="int" />
+		<Param name="mtk_bt_spk_dual_path_in_call" type="int" />
+	</ParamUnit>
+</ParamUnitDesc>

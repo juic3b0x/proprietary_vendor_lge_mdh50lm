@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AudioParam version="1.0">
+  <ParamTree>
+    <Param path="GLOBAL" param_id="0"/>
+    <Param path="KR" param_id="1"/>
+    <Param path="NA" param_id="2"/>
+    <Param path="JP" param_id="3"/>
+    <Param path="SPR" param_id="4"/>
+  </ParamTree>
+  <ParamUnitPool>
+    <ParamUnit param_id="0">
+      <Param name="lge_3pole_with_submic" value="0"/>
+      <Param name="lge_use_phone_memo" value="0"/>
+      <Param name="lge_in_call_camera_shutter_scenario" value="0"/>
+      <Param name="lge_hifi_support" value="0"/>
+      <Param name="mtk_bt_spk_dual_path_in_call" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="1">
+      <Param name="lge_3pole_with_submic" value="0"/>
+      <Param name="lge_use_phone_memo" value="1"/>
+      <Param name="lge_in_call_camera_shutter_scenario" value="1"/>
+      <Param name="lge_hifi_support" value="0"/>
+      <Param name="mtk_bt_spk_dual_path_in_call" value="1"/>
+    </ParamUnit>
+    <ParamUnit param_id="2">
+      <Param name="lge_3pole_with_submic" value="0"/>
+      <Param name="lge_use_phone_memo" value="0"/>
+      <Param name="lge_in_call_camera_shutter_scenario" value="0"/>
+      <Param name="lge_hifi_support" value="0"/>
+      <Param name="mtk_bt_spk_dual_path_in_call" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="3">
+      <Param name="lge_3pole_with_submic" value="0"/>
+      <Param name="lge_use_phone_memo" value="1"/>
+      <Param name="lge_in_call_camera_shutter_scenario" value="1"/>
+      <Param name="lge_hifi_support" value="0"/>
+      <Param name="mtk_bt_spk_dual_path_in_call" value="1"/>
+    </ParamUnit>
+    <ParamUnit param_id="4">
+      <Param name="lge_3pole_with_submic" value="1"/>
+      <Param name="lge_use_phone_memo" value="0"/>
+      <Param name="lge_in_call_camera_shutter_scenario" value="0"/>
+      <Param name="lge_hifi_support" value="0"/>
+      <Param name="mtk_bt_spk_dual_path_in_call" value="0"/>
+    </ParamUnit>
+  </ParamUnitPool>
+</AudioParam>

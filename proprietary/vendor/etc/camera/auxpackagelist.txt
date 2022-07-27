@@ -1,0 +1,5 @@
+com.lge.camera
+com.lge.qmemoplus
+com.lge.servicemenu
+com.globaluiservice.main
+android

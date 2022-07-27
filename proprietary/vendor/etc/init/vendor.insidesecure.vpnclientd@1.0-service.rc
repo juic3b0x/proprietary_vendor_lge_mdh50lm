@@ -1,0 +1,10 @@
+service vendor.vpnclientd-hal-1-0 /vendor/bin/hw/vendor.insidesecure.vpnclientd@1.0-service
+    class hal
+    user system
+    group system
+    interface vendor.insidesecure.vpnclientd@1.0::ITransport default
+    oneshot
+    disabled
+
+on property:init.svc.vendor.vpnclientd=stopped
+    stop vendor.vpnclientd-hal-1-0
